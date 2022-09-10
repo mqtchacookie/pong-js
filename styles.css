@@ -10,16 +10,17 @@ body {
 	align-items: center;
 	gap: 16px;
     min-width: 75vw;
+	
 }
 
-.background {
+.foreground {
 	width: 75vw;
 	height: 75vh;
 	background-color: black;
 	border: solid 8px slategray;
 	border-radius: 10px;
+	flex-shrink: 0;
 }
-
 .start {
 	padding: 1rem 4rem;
 	scale: 1;
