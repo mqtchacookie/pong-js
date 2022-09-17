@@ -22,6 +22,8 @@ body {
 	border: solid 8px slategray;
 	border-radius: 10px;
 	flex-shrink: 0;
+	padding: 16px 32px;
+	display: flex;
 }
 .start {
 	padding: 1rem 4rem;
@@ -40,7 +42,7 @@ body {
 .player-text {
 	display: flex;
 	flex-direction: column;
-	align-items: center	;
+	align-items: center;
 	color: white;
 	font-size: larger;
 }
@@ -56,4 +58,10 @@ body {
 	align-items: center;
 	flex-direction: column;
 	gap: 8px;
+}
+
+.paddle {
+	width: 15px;
+	height: 80px;
+	background-color: white;
 }
