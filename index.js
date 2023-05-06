@@ -9,12 +9,14 @@ const newGame = () => {
 	const p2_score = document.createElement('div');
 	const paddle1 = document.createElement('div');
 	const paddle2 = document.createElement('div');
-	const paddles = document.createElement('div')
+	const paddles = document.createElement('div');
 
-	
+	//Paddles
 	paddle1.classList.add('paddle');
 	paddle2.classList.add('paddle');
-	
+	paddles.append(paddle1);
+	paddles.append(paddle2);
+
 	foreground.classList.add('foreground');
 	text.classList.add('game-text');
 
@@ -32,13 +34,12 @@ const newGame = () => {
 
 	p1_text.append(p1_score);
 	p2_text.append(p2_score);
-
+	//
 	text.append(p1_text);
 	text.append(p2_text);
-
+	// Foreground
 	foreground.append(text);
-	foreground.append(paddle1);
-	foreground.append(paddle2);
+	foreground.append(paddles);
 
 	game.append(foreground);
 };

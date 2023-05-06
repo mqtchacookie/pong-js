@@ -24,6 +24,7 @@ body {
 	flex-shrink: 0;
 	padding: 16px 32px;
 	display: flex;
+	flex-direction: column;
 }
 .start {
 	padding: 1rem 4rem;
@@ -50,7 +51,8 @@ body {
 .game-text {
 	padding: 16px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	height: fit-content;
 }
 
 .player {
@@ -64,4 +66,6 @@ body {
 	width: 15px;
 	height: 80px;
 	background-color: white;
+	position: relative;
+	left: 48px;
 }
